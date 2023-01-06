@@ -1,0 +1,1024 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : web_bean
+* Template Name : Showkil - Personal Portfolio Html5 Template
+* File          : Showkil main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* INDEX
+----------------------------------------------------------------------------------------
+01. General css
+02. Navigation area css
+03. Slider area css
+04. Service area css
+05. Testimonial area css
+06. Contact area css
+07. Footer area css
+-------------------------------------------------------------------------------------- */
+
+
+/* Google Font Load */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,800');
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                       01. General css
+* -------------------------------------------------------------------------------------- */
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    color: #777;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+p {
+    letter-spacing: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    color: #fff;
+}
+
+.btn,
+input[type='submit'] {
+    display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    background: #04878A;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.btn:hover,
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.btn.btn-reverse {
+    background: #333;
+}
+
+.btn.btn-reverse:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+.btn.btn-white {
+    color: #333;
+    background-color: #fff;
+}
+
+.btn.btn-white:hover {
+    color: #fff;
+    background: #333;
+}
+
+
+.btn.btn-lg {
+    height: 50px;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    border-radius: 5px;
+}
+
+
+.section-big {
+    padding: 100px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-small {
+    padding: 50px 0px;
+}
+
+.section-title {
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.section-title.white h2 {
+    color: #fff;
+}
+
+.section-title h2 {
+    margin-bottom: 25px;
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.section-title h2:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 6px;
+    z-index: 1;
+    margin-left: -53px;
+    border-radius: 10px;
+    border: 1px solid #04878A;
+}
+
+
+
+
+
+/* preloader css */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-image: url(../img/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+}
+
+.space {
+    height: 80px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+.menu-area {
+    height: 70px;
+}
+
+.menu-area.sticky-menu {
+    height: 50px;
+    background: #fff;
+}
+
+.sticky-menu {
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.mainmenu {
+    margin-top: 10px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticky-menu .mainmenu {
+    margin-top: 0px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0px;
+}
+
+.navbar-brand {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.navbar-brand span {
+    color: #04878A;
+    font-weight: 800;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.sticky-menu .navbar-brand,
+.sticky-menu .navbar-brand span {
+    color: #04878A;
+}
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-nav li a {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-nav li.active a {
+    font-weight: 700;
+}
+
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:focus {
+    background: none;
+}
+
+.sticky-menu .navbar-nav li a {
+    color: #777;
+}
+
+.sticky-menu .navbar-nav li.active a {
+    color: #04878A;
+}
+
+
+/* Mobile Nav css */
+.navbar-toggle .icon-bar {
+    background: #777;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                               03. Slider area css
+* -------------------------------------------------------------------------------------- */
+
+.slider-area {
+    background-image: url(../img/bg/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.slider-area:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-area,
+.slider-area .carousel,
+.slider-area .carousel-inner,
+.slider-area .item {
+    height: 100%;
+    /*max-height: 670px;*/
+}
+
+.intro-text {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 3px;
+}
+
+.typed-cursor,
+.typejs {
+    display: inline;
+    font-weight: 900;
+    font-size: 100px;
+    color: #04878A;
+}
+
+.typed-cursor {
+    font-weight: 300;
+}
+
+.intro-text h2 {
+    font-size: 26px;
+    color: inherit;
+    font-weight: 300;
+}
+
+.intro-text .icon-btn {
+    margin-top: 30px;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.intro-text .icon-btn i.fa {
+    position: absolute;
+    left: -10px;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@media(max-width: 991px) {
+    .intro-text {
+        margin: 80px auto;
+        text-align: center;
+    }
+}
+
+
+#carousel-example-generic .animated {
+    animation-delay: .5s;
+}
+
+.carousel-indicators {
+    bottom: 90px;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   04. About area css
+* --------------------------------------------------------------------------------------- */
+section {
+    position: relative;
+    z-index: 10;
+}
+
+.img-side {
+    padding: 0;
+    position: absolute !important;
+    top: 0px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.img-side.fixed-image {
+    position: fixed !important;
+}
+
+.img-side.img-right {
+    right: 0;
+}
+
+.img-side.img-left {
+    left: 0;
+}
+
+.img-side.img-center {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.img-holder {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+    .img-side {
+        min-height: 400px;
+        position: relative !important;
+        z-index: 0;
+        margin-top: -50px;
+    }
+
+    .img-side .img-holder .title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    section.p-0 .img-side,
+    section.pt-0 .img-side {
+        margin-top: 0;
+    }
+}
+
+.about-text {
+    background: #fff;
+    z-index: 100;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #777;
+    box-shadow: 0 0 0 20px #fff;
+    margin: 20px;
+    transform: translate(-12%);
+}
+
+.about-text h2 {
+    margin-top: 5px;
+}
+
+.me-image img {
+    border-radius: 10px;
+    max-height: 400px;
+    margin: auto;
+}
+
+.me-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text-2 {
+    padding-left: 15px;
+}
+
+.about-text-2 h2 {
+    margin-top: 0px;
+}
+
+.about-area .btn {
+    margin-top: 10px;
+}
+
+.about-me h3 span {
+    font-weight: 400;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   07. Service area css
+* --------------------------------------------------------------------------------------- */
+.service-area {}
+
+.service-area .section-title {
+    margin-bottom: 30px;
+}
+
+.service-box {
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px 25px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service-box:before {
+    position: absolute;
+    content: '';
+    top: 45px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: #04878A;
+    z-index: -1;
+    transition: 0.2s ease-out;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    margin-left: -30px;
+}
+
+.service-box span {
+    font-size: 25px;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 70px;
+}
+
+.service-box h3 {
+    margin-top: 0px;
+    font-weight: 800;
+}
+
+.service-box p {
+    overflow: hidden;
+    margin: 0px;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               06. Portfolio/work area css
+* --------------------------------------------------------------------------------------- */
+.portfolio .mix {
+    display: none;
+}
+
+.filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.filters li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 70px;
+    cursor: pointer;
+    color: #777;
+    font-size: 16px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.filters li.active {
+    color: #fff;
+    background-color: #04878A;
+}
+
+.filters li span {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.work-items {
+    margin-top: 20px;
+}
+
+.work-items .item {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.work-items .item img {
+    width: 100%;
+    transition: 0.8s ease-out;
+    max-height: 240px;
+}
+
+.work-items .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -ms-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -moz-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.work-items .item:hover {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    z-index: 100;
+}
+
+.work-items .item:hover .overlay {
+    opacity: 0.9;
+    width: 100%;
+    height: 85%;
+    top: 0;
+    left: 0;
+}
+
+.work-items .overlay span {
+    font-size: 25px;
+    color: #fff;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-items .overlay span:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: #04878A;
+    z-index: -1;
+    transition: 0.2s ease-out;
+    margin-left: -40px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.work-items .overlay span:hover:after {
+    transform: rotate(45deg);
+}
+
+.item .title {
+    color: #fff;
+    font-size: 15px;
+    background: #04878A;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                08. Testimonial area css
+* --------------------------------------------------------------------------------------- */
+.testimonial-area {}
+
+.testimonial-content {
+    text-align: right;
+}
+
+.single-testimonial {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 25px;
+    border: 1px solid #ddd;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+
+.single-testimonial span {
+    color: #fff;
+    padding: 25px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.single-testimonial span:after {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: #ff214f;
+    z-index: -1;
+    transition: 0.2s ease-out;
+    margin-left: -30px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+
+
+.testimonial-area .subtitle,
+.testimonial-area h2 {
+    margin-top: 0px;
+}
+
+.single-testimonial img {
+    margin-top: 30px;
+    border-radius: 100px;
+    display: none;
+}
+
+.single-testimonial h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.single-testimonial h3 {
+    color: inherit;
+}
+
+.single-testimonial .desg {
+    font-size: 14px;
+    margin: 0;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 30px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 20px;
+    height: 5px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    background: #333;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    font-size: 25px;
+    background: none;
+    padding: 5px;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   12. Contact area css
+* --------------------------------------------------------------------------------------- */
+.contact-area .container {
+    max-width: 700px;
+}
+
+.contact-form {}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    color: #333;
+    box-shadow: none;
+    margin: 5px 0;
+}
+
+.form-control:focus {
+    border-color: #333;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form .form-group {
+    position: relative;
+    padding-left: 35px;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-form .form-group:before {
+    position: absolute;
+    height: 50px;
+    font-family: FontAwesome;
+    top: 0;
+    left: 5px;
+    width: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: #04878A;
+}
+
+.in_name:before {
+    content: '\f007';
+}
+
+.in_email:before {
+    content: '\f1d8';
+}
+
+.in_message:before {
+    content: '\f0e0';
+}
+
+.contact-form textarea#message {
+    padding-top: 10px;
+    height: 99px;
+}
+
+.contact-form .actions {
+    text-align: center;
+}
+
+#submitButton {
+    margin-top: 30px;
+}
+
+.success {
+    background: #fff none repeat scroll 0 0;
+    color: #50B948;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    background: #fff none repeat scroll 0 0;
+    color: #ff0000;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   13. Footer area css
+* --------------------------------------------------------------------------------------- */
+.footer-area {
+    background: #333;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer-area p.copyright {
+    margin: 0;
+    line-height: 30px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address-box {
+    margin-bottom: 10px;
+}
+
+.address-box a:hover {
+    color: #ddd;
+}
+
+.address-box p,
+.address-box p a {
+    color: inherit;
+    margin: 0;
+}
+
+.social-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social-ul li {
+    display: inline-block;
+    float: none;
+}
+
+.social-ul li a {
+    position: relative;
+    display: block;
+}
+
+.social-ul li a:after {
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #04878A;
+    z-index: 1;
+    transition: 0.2s ease-out;
+    margin-left: -18px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+
+.social-ul li span {
+    font-size: 25px;
+    padding: 15px;
+    color: #000;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.social-ul li a:hover:after {
+    background: #fff;
+}

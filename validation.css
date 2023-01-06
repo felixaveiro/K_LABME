@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    /*Defining variable,root accessible*/
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+
+* {
+    box-sizing: border-box;
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now!*/
+    /*Link - https://jsbin.com/pugenef/1/edit?html,css,output */
+}
+
+
+body {
+    background-color: #5e7185;
+    font-family: 'Opens Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+    padding-top: 2rem;
+justify-content: center;
+}
+
+.container {
+    background-color: rgb(5, 3, 17);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    justify-content: center;
+
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+    justify-content: center;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+
+}
+
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    /*visibility: hidden; = simply hides it whereas Display:none = collapse the content*/
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+.nav_bar {
+    background-color: rgba(131, 115, 187, 0.842);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    text-decoration: none;
+    text-decoration: #2ecc71;
+}
+a{
+    color: #fff;
+}
+.link{
+text-align: center;
+text-decoration: crimson;
+
+}
+@media screen and (min-width: 480px) {
+    #leftsidebar {
+        width: 200px;
+        float: left;
+    }
+
+    #main {
+        margin-left: 216px;
+    }
+}
